@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">ପ୍ରୋଜେକ୍ଟ ଆଶା ମୋବାଇଲ୍</string>
+    <string name="language_label">ଭାଷା ବାଛନ୍ତୁ</string>
+    <string name="open_login_page">ଲଗଇନ୍ ପୃଷ୍ଠା ଖୋଲନ୍ତୁ</string>
+    <string name="open_beneficiary_page">ଲାଭାନ୍ବିତ ପୃଷ୍ଠା ଖୋଲନ୍ତୁ</string>
+    <string name="open_visit_page">ଭିଜିଟ୍ ପୃଷ୍ଠା ଖୋଲନ୍ତୁ</string>
+    <string name="sync_pending_visits">ବକେୟା ଭିଜିଟ୍ ସିଙ୍କ କରନ୍ତୁ</string>
+    <string name="sync_offline_state">ସିଙ୍କ ଓ ଅଫଲାଇନ୍ ଅବସ୍ଥା</string>
+    <string name="ai_risk_result">AI ଝୁମ୍ପ ଫଳାଫଳ</string>
+    <string name="escalation_referral">ଏସ୍କାଲେସନ୍ ଓ ରିଫରାଲ୍</string>
+    <string name="notifications">ସୂଚନା</string>
+    <string name="patient_history">ରୋଗୀ ଇତିହାସ</string>
+    <string name="settings">ସେଟିଂସ୍</string>
+    <string name="morning_shift">ସକାଳ ସିଫ୍ଟ ଡ୍ୟାଶବୋର୍ଡ</string>
+    <string name="visits_today_value">ଆଜି 08 ଭିଜିଟ୍</string>
+    <string name="pending_sync_value">ବକେୟା ସିଙ୍କ: --</string>
+    <string name="high_risk_summary">3 ଜଣ ରୋଗୀ ଉଚ୍ଚ ଝୁମ୍ପ ଜୋନରେ। ତୁରନ୍ତ ପୁନଃମୂଲ୍ୟାୟନ ଆବଶ୍ୟକ।</string>
+    <string name="add_new_patient">ନୂତନ ରୋଗୀ ଯୋଡନ୍ତୁ</string>
+    <string name="start_visit">ଭିଜିଟ୍ ଆରମ୍ଭ କରନ୍ତୁ</string>
+    <string name="pending_sync">ସ୍ଥାନୀୟ ବକେୟା ରେକର୍ଡ</string>
+    <string name="pending_sync_unknown">ସ୍ଥାନୀୟ ବକେୟା ରେକର୍ଡ: ଅନୁପଲବ୍ଧ</string>
+    <string name="recommendation_24h">ସୁପାରିଶ: 24 ଘଣ୍ଟା ମଧ୍ୟରେ ଡାକ୍ତରଙ୍କ ପାଖକୁ ପଠାନ୍ତୁ</string>
+    <string name="escalate_case">କେସ୍ ଏସ୍କାଲେଟ୍ କରନ୍ତୁ</string>
+    <string name="call_doctor">ଡାକ୍ତରଙ୍କୁ ଫୋନ୍ କରନ୍ତୁ</string>
+    <string name="escalation_notes_hint">ରୋଗୀର ଅବସ୍ଥା ଓ ଏସ୍କାଲେସନ୍ ଟିପ୍ପଣୀ ଲେଖନ୍ତୁ</string>
+    <string name="confirm_referral">ରିଫରାଲ୍ ନିଶ୍ଚିତ କରନ୍ତୁ</string>
+    <string name="view_patient_file">ରୋଗୀ ଫାଇଲ୍ ଦେଖନ୍ତୁ</string>
+    <string name="log_medication">ଔଷଧ ରେକର୍ଡ କରନ୍ତୁ</string>
+    <string name="retry_sync">ପୁଣିଥରେ ସିଙ୍କ କରନ୍ତୁ</string>
+    <string name="voice_guidance">ଭୋଇସ୍ ଗାଇଡେନ୍ସ</string>
+    <string name="auto_sync">ଅଟୋ-ସିଙ୍କ</string>
+    <string name="call_help_support">ସହାୟତାକୁ ଫୋନ୍ କରନ୍ତୁ</string>
+    <string name="logout">ଲଗ୍ ଆଉଟ୍</string>
+    <string name="beneficiary_id_dash">ଲାଭାନ୍ବିତ ID: -</string>
+    <string name="status_ready">ପ୍ରସ୍ତୁତ</string>
+
+    <string name="login_page_title">ଲଗଇନ୍ ଏବଂ ପଞ୍ଜିକରଣ</string>
+    <string name="asha_email">ASHA ଇମେଲ୍</string>
+    <string name="password">ପାସୱାର୍ଡ</string>
+    <string name="register_asha">ASHA ପଞ୍ଜିକରଣ</string>
+    <string name="login">ଲଗଇନ୍</string>
+
+    <string name="beneficiary_page_title">ଲାଭାନ୍ବିତ ସୃଷ୍ଟି କରନ୍ତୁ</string>
+    <string name="beneficiary_name">ଲାଭାନ୍ବିତଙ୍କ ନାମ</string>
+    <string name="village">ଗାଁ</string>
+    <string name="create_beneficiary">ଲାଭାନ୍ବିତ ସୃଷ୍ଟି କରନ୍ତୁ</string>
+
+    <string name="visit_page_title">ଭିଜିଟ୍ ରେକର୍ଡ କରନ୍ତୁ (ଅଫଲାଇନ୍)</string>
+    <string name="beneficiary_id">ଲାଭାନ୍ବିତ ID</string>
+    <string name="visit_type">ଭିଜିଟ୍ ପ୍ରକାର (ଘର/କ୍ଲିନିକ୍)</string>
+    <string name="systolic_bp">ସିଷ୍ଟୋଲିକ୍ BP</string>
+    <string name="hemoglobin">ହେମୋଗ୍ଲୋବିନ୍</string>
+    <string name="save_visit_offline">ଭିଜିଟ୍ ଅଫଲାଇନ୍ ସେଭ୍ କରନ୍ତୁ</string>
+
+    <string name="language_english">ଇଂରାଜୀ</string>
+    <string name="language_hindi">ହିନ୍ଦୀ</string>
+    <string name="language_tamil">ତାମିଳ</string>
+    <string name="language_telugu">ତେଲୁଗୁ</string>
+    <string name="language_odia">ଓଡ଼ିଆ</string>
+    <string name="language_bengali">ବଙ୍ଗଳା</string>
+
+    <string name="toast_enter_email_password">ଇମେଲ୍ ଓ ପାସୱାର୍ଡ ଦିଅନ୍ତୁ</string>
+    <string name="toast_logged_in">ଲଗଇନ୍ ସଫଳ</string>
+    <string name="toast_login_failed">ଲଗଇନ୍ ବିଫଳ</string>
+    <string name="toast_registered">ପଞ୍ଜିକରଣ ସମ୍ପୂର୍ଣ୍ଣ</string>
+    <string name="toast_register_failed">ପଞ୍ଜିକରଣ ବିଫଳ କିମ୍ବା ପୂର୍ବରୁ ଅଛି</string>
+    <string name="toast_enter_name">ନାମ ଦିଅନ୍ତୁ</string>
+    <string name="toast_beneficiary_created">ଲାଭାନ୍ବିତ ସୃଷ୍ଟି ସଫଳ</string>
+    <string name="toast_beneficiary_failed">ଲାଭାନ୍ବିତ ସୃଷ୍ଟି ବିଫଳ</string>
+    <string name="toast_enter_beneficiary_id">ଲାଭାନ୍ବିତ ID ଦିଅନ୍ତୁ</string>
+    <string name="toast_enter_observation">କମ୍ ସେ କମ୍ ଗୋଟିଏ ପର୍ଯ୍ୟବେକ୍ଷଣ ଦିଅନ୍ତୁ</string>
+    <string name="toast_visit_saved">ଭିଜିଟ୍ ଅଫଲାଇନ୍ ସେଭ୍ ହେଲା</string>
+    <string name="toast_visit_failed">ଭିଜିଟ୍ ସେଭ୍ ବିଫଳ</string>
+    <string name="toast_sync_done">ସିଙ୍କ ସମ୍ପୂର୍ଣ୍ଣ</string>
+    <string name="toast_sync_failed">ସିଙ୍କ ବିଫଳ</string>
+
+    <string name="status_login_success">ଲଗଇନ୍ ସଫଳ</string>
+    <string name="status_login_failed">ଲଗଇନ୍ ବିଫଳ</string>
+    <string name="status_registered">ASHA ପଞ୍ଜିକୃତ</string>
+    <string name="status_registration_note">ପଞ୍ଜିକରଣ ଟିପ୍ପଣୀ</string>
+    <string name="status_beneficiary_created">ଲାଭାନ୍ବିତ ସୃଷ୍ଟି ହେଲା</string>
+    <string name="status_beneficiary_failed">ଲାଭାନ୍ବିତ ସୃଷ୍ଟି ବିଫଳ</string>
+    <string name="status_visit_saved">ଅଫଲାଇନ୍ ଭିଜିଟ୍ ସେଭ୍ ହେଲା</string>
+    <string name="status_visit_failed">ଭିଜିଟ୍ ସେଭ୍ ବିଫଳ</string>
+    <string name="status_sync_complete">ସିଙ୍କ ସମ୍ପୂର୍ଣ୍ଣ। ସିଙ୍କ ଗଣନା</string>
+    <string name="status_sync_failed">ସିଙ୍କ ବିଫଳ</string>
+</resources>

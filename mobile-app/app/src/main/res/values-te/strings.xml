@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ప్రాజెక్ట్ ఆశా మొబైల్</string>
+    <string name="language_label">భాషను ఎంచుకోండి</string>
+    <string name="open_login_page">లాగిన్ పేజీ తెరువు</string>
+    <string name="open_beneficiary_page">లబ్ధిదారుల పేజీ తెరువు</string>
+    <string name="open_visit_page">విజిట్ పేజీ తెరువు</string>
+    <string name="sync_pending_visits">పెండింగ్ విజిట్లు సింక్ చేయి</string>
+    <string name="status_ready">సిద్ధంగా ఉంది</string>
+    <string name="login_page_title">లాగిన్ మరియు రిజిస్ట్రేషన్</string>
+    <string name="register_asha">ASHA నమోదు</string>
+    <string name="beneficiary_page_title">లబ్ధిదారుని సృష్టించు</string>
+    <string name="visit_page_title">విజిట్ నమోదు (ఆఫ్‌లైన్)</string>
+    <string name="save_visit_offline">విజిట్ ఆఫ్‌లైన్ సేవ్ చేయి</string>
+    <string name="language_english">ఇంగ్లీష్</string>
+    <string name="language_hindi">హిందీ</string>
+    <string name="language_tamil">తమిళం</string>
+    <string name="language_telugu">తెలుగు</string>
+    <string name="language_odia">ఒడియా</string>
+    <string name="language_bengali">బెంగాలీ</string>
+</resources>
