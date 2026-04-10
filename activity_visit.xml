@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_white">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/spacing_lg"
+        android:background="@color/background_white">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/icon_size_md"
+            android:layout_height="@dimen/icon_size_md"
+            android:src="@android:drawable/ic_menu_back"
+            android:contentDescription="Back"
+            android:tint="@color/primary_blue"
+            android:layout_marginEnd="@dimen/spacing_md" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textSize="@dimen/text_xl"
+            android:textStyle="bold"
+            android:textColor="@color/primary_blue" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="@dimen/spacing_sm">
+
+            <View
+                android:layout_width="@dimen/spacing_sm"
+                android:layout_height="@dimen/spacing_sm"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/offline_indicator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offline"
+                android:textSize="@dimen/text_xs"
+                android:textColor="@color/text_dark"
+                android:layout_marginStart="@dimen/spacing_sm" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg">
+
+            <!-- Step Indicator -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_1_of_3"
+                style="@style/LabelText"
+                android:layout_marginBottom="@dimen/spacing_md" />
+
+            <!-- Title and Progress -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_lg">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/visit_recording"
+                        style="@style/HeadingMedium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/complete_percent"
+                        style="@style/SecondaryText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_md"
+                android:progress="33"
+                android:progressDrawable="@drawable/progress_bar_background"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_marginBottom="@dimen/spacing_xl" />
+
+            <!-- Tabs -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/spacing_lg">
+
+                <Button
+                    android:id="@+id/symptomsTab"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height_small"
+                    android:layout_weight="1"
+                    android:text="@string/select_symptoms"
+                    android:textSize="@dimen/text_md"
+                    android:backgroundTint="@color/background_white"
+                    android:textColor="@color/text_dark"
+                    android:layout_marginEnd="@dimen/spacing_md" />
+
+                <Button
+                    android:id="@+id/voiceTab"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height_small"
+                    android:layout_weight="1"
+                    android:text="@string/record_voice"
+                    android:textSize="@dimen/text_md"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/primary_blue"
+                    android:drawableStart="@android:drawable/ic_btn_speak_now" />
+            </LinearLayout>
+
+            <!-- Symptoms Grid -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:layout_marginBottom="@dimen/spacing_xl">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/feverCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_md"
+                    app:cardBackgroundColor="@color/primary_blue"
+                    app:cardCornerRadius="@dimen/corner_radius_lg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="@dimen/spacing_lg">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@android:drawable/ic_dialog_info"
+                            android:contentDescription="Fever"
+                            android:tint="@color/text_white"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fever"
+                            android:textSize="@dimen/text_md"
+                            android:textColor="@color/text_white"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/coughCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_md"
+                    app:cardBackgroundColor="@color/background_light"
+                    app:cardCornerRadius="@dimen/corner_radius_lg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="@dimen/spacing_lg">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@android:drawable/ic_dialog_info"
+                            android:contentDescription="Cough"
+                            android:tint="@color/text_dark"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cough"
+                            android:textSize="@dimen/text_md"
+                            android:textColor="@color/text_dark"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/painCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_md"
+                    app:cardBackgroundColor="@color/background_light"
+                    app:cardCornerRadius="@dimen/corner_radius_lg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="@dimen/spacing_lg">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@android:drawable/ic_dialog_info"
+                            android:contentDescription="Pain"
+                            android:tint="@color/text_dark"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pain"
+                            android:textSize="@dimen/text_md"
+                            android:textColor="@color/text_dark"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/breathingCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_md"
+                    app:cardBackgroundColor="@color/background_light"
+                    app:cardCornerRadius="@dimen/corner_radius_lg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="@dimen/spacing_lg">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@android:drawable/ic_dialog_info"
+                            android:contentDescription="Breathing"
+                            android:tint="@color/text_dark"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/breathing"
+                            android:textSize="@dimen/text_md"
+                            android:textColor="@color/text_dark"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/allergyCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_md"
+                    app:cardBackgroundColor="@color/background_light"
+                    app:cardCornerRadius="@dimen/corner_radius_lg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="@dimen/spacing_lg">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@android:drawable/ic_dialog_info"
+                            android:contentDescription="Allergy"
+                            android:tint="@color/text_dark"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/allergy"
+                            android:textSize="@dimen/text_md"
+                            android:textColor="@color/text_dark"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/otherCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_md"
+                    app:cardBackgroundColor="@color/background_light"
+                    app:cardCornerRadius="@dimen/corner_radius_lg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="@dimen/spacing_lg">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_size_lg"
+                            android:layout_height="@dimen/icon_size_lg"
+                            android:src="@android:drawable/ic_dialog_info"
+                            android:contentDescription="Other"
+                            android:tint="@color/text_dark"
+                            android:layout_marginBottom="@dimen/spacing_md" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textSize="@dimen/text_md"
+                            android:textColor="@color/text_dark"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+
+            <!-- Patient Vitals Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_vitals"
+                style="@style/HeadingSmall"
+                android:layout_marginBottom="@dimen/spacing_lg" />
+
+            <!-- Blood Pressure Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_lg"
+                app:cardBackgroundColor="@color/background_light"
+                app:cardCornerRadius="@dimen/corner_radius_lg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/spacing_lg">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/blood_pressure"
+                            style="@style/LabelText" />
+
+                        <EditText
+                            android:id="@+id/systolicInput"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="120/80"
+                            android:inputType="text"
+                            android:background="@android:color/transparent"
+                            android:textSize="@dimen/text_xxl"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_dark"
+                            android:textColorHint="@color/text_light" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mmhg"
+                            style="@style/SecondaryText" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size_lg"
+                        android:layout_height="@dimen/icon_size_lg"
+                        android:src="@android:drawable/ic_menu_camera"
+                        android:contentDescription="Camera"
+                        android:tint="@color/primary_blue" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Body Weight Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_lg"
+                app:cardBackgroundColor="@color/background_light"
+                app:cardCornerRadius="@dimen/corner_radius_lg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/spacing_lg">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/body_weight"
+                            style="@style/LabelText" />
+
+                        <EditText
+                            android:id="@+id/hemoglobinInput"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="68.5"
+                            android:inputType="numberDecimal"
+                            android:background="@android:color/transparent"
+                            android:textSize="@dimen/text_xxl"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_dark"
+                            android:textColorHint="@color/text_light" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kg"
+                            style="@style/SecondaryText" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size_lg"
+                        android:layout_height="@dimen/icon_size_lg"
+                        android:src="@android:drawable/ic_menu_info_details"
+                        android:contentDescription="Weight"
+                        android:tint="@color/primary_blue" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Input Measurement -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/spacing_lg">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/input_measurement"
+                    style="@style/BodyText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active"
+                    style="@style/LabelText"
+                    android:background="@drawable/rounded_background"
+                    android:padding="@dimen/spacing_sm" />
+            </LinearLayout>
+
+            <!-- Numeric Keypad -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="4"
+                android:layout_marginBottom="@dimen/spacing_xl">
+
+                <Button
+                    android:id="@+id/keypad1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="1"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypad2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="2"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypad3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="3"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypad4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="4"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypad5"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="5"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypad6"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="6"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypad7"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="7"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypad8"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="8"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypad9"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="9"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypad0"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="0"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+
+                <Button
+                    android:id="@+id/keypadDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:text="⌫"
+                    android:textSize="@dimen/text_xl"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="@dimen/spacing_sm"
+                    android:backgroundTint="@color/background_light"
+                    android:textColor="@color/text_dark" />
+            </GridLayout>
+
+            <!-- Next Step Button -->
+            <Button
+                android:id="@+id/saveVisitButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/next_step"
+                style="@style/PrimaryButton"
+                android:layout_marginBottom="@dimen/spacing_xl" />
+
+            <!-- Status Text -->
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/status_ready"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/text_secondary"
+                android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

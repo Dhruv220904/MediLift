@@ -1,0 +1,291 @@
+<resources>
+    <string name="app_name">MediLift</string>
+    <string name="language_label">Choose language</string>
+    <string name="open_login_page">Open Login Page</string>
+    <string name="open_beneficiary_page">Open Beneficiary Page</string>
+    <string name="open_visit_page">Open Visit Page</string>
+    <string name="sync_pending_visits">Sync Pending Visits</string>
+    <string name="sync_offline_state">Sync and Offline State</string>
+    <string name="ai_risk_result">AI Risk Result</string>
+    <string name="escalation_referral">Escalation and Referral</string>
+    <string name="notifications">Notifications</string>
+    <string name="patient_history">Patient History</string>
+    <string name="settings">Settings</string>
+
+    <!-- Login & Onboarding -->
+    <string name="care_without_boundaries">Care\nWithout\nBoundaries.</string>
+    <string name="empowering_healthcare">Empowering healthcare workers in every environment, with or without a signal.</string>
+    <string name="offline_ready">Offline Ready</string>
+    <string name="voice_guidance_label">Voice Guidance</string>
+    <string name="secure_pin_entry">Secure PIN Entry</string>
+    <string name="enter_4_digit_code">Enter your 4-digit clinical access code</string>
+    <string name="continue_offline">Continue Offline</string>
+    <string name="secured_by_medilift">SECURED BY MEDILIFT ENCRYPTION v4.2</string>
+
+    <!-- Home Dashboard -->
+    <string name="morning_shift">MORNING SHIFT</string>
+    <string name="daily_focus">Daily Focus</string>
+    <string name="visits_today">VISITS TODAY</string>
+    <string name="visits_today_value">08 visits today</string>
+    <string name="critical_intervention">CRITICAL INTERVENTION REQUIRED</string>
+    <string name="high_risk_zone">3 Patients in High-Risk Zone</string>
+    <string name="high_risk_summary">3 patients in high-risk zone. Immediate reassessment required.</string>
+    <string name="vitals_recorded">Vitals recorded over 4 hours ago for rural sectors B and C. Immediate re-assessment required.</string>
+    <string name="view_alerts">VIEW ALERTS</string>
+    <string name="local_storage">Local Storage</string>
+    <string name="records_pending_sync">14 Records pending cloud synchronization</string>
+    <string name="sync_progress">SYNC PROGRESS</string>
+    <string name="add_new_patient">Add New Patient</string>
+    <string name="start_visit">Start Visit</string>
+    <string name="pending_follow_ups">Pending Follow-ups</string>
+    <string name="see_all">SEE ALL</string>
+    <string name="post_op">Post-op</string>
+    <string name="cardiac_check">Cardiac Check</string>
+    <string name="room_402">Room 402</string>
+    <string name="overdue">OVERDUE</string>
+    <string name="scheduled">SCHEDULED</string>
+
+    <!-- Add Beneficiary -->
+    <string name="new_beneficiary">New Beneficiary</string>
+    <string name="register_new_patient">Register a new patient to the regional healthcare registry.</string>
+    <string name="full_patient_name">FULL PATIENT NAME</string>
+    <string name="enter_full_name">Enter full name</string>
+    <string name="age_years">AGE (YEARS)</string>
+    <string name="gender_identification">GENDER IDENTIFICATION</string>
+    <string name="select_gender">Select gender</string>
+    <string name="pregnancy_status">Pregnancy Status</string>
+    <string name="is_patient_pregnant">Is the patient currently pregnant?</string>
+    <string name="community_cluster">COMMUNITY CLUSTER</string>
+    <string name="save_patient">Save Patient</string>
+    <string name="auto_saving">AUTO-SAVING...</string>
+
+    <!-- Visit Recording -->
+    <string name="step_1_of_3">STEP 1 OF 3</string>
+    <string name="visit_recording">Visit Recording</string>
+    <string name="complete_percent">33% Complete</string>
+    <string name="select_symptoms">Select Symptoms</string>
+    <string name="record_voice">Record Voice</string>
+    <string name="fever">Fever</string>
+    <string name="cough">Cough</string>
+    <string name="pain">Pain</string>
+    <string name="breathing">Breathing</string>
+    <string name="allergy">Allergy</string>
+    <string name="other">Other</string>
+    <string name="patient_vitals">Patient Vitals</string>
+    <string name="blood_pressure">BLOOD PRESSURE</string>
+    <string name="mmhg">mmHg</string>
+    <string name="body_weight">BODY WEIGHT</string>
+    <string name="kg">kg</string>
+    <string name="input_measurement">Input Measurement</string>
+    <string name="active">ACTIVE</string>
+    <string name="next_step">Next Step →</string>
+
+    <!-- AI Risk Result -->
+    <string name="assessment_result">Assessment Result</string>
+    <string name="patient_id">Patient ID</string>
+    <string name="high_risk">HIGH RISK</string>
+    <string name="high_risk_pregnancy">High-risk pregnancy detected</string>
+    <string name="recommendation">RECOMMENDATION</string>
+    <string name="refer_to_doctor_24h">Refer to doctor within 24 hours</string>
+    <string name="escalate_case">Escalate Case</string>
+    <string name="done">Done</string>
+    <string name="critical">CRITICAL</string>
+    <string name="borderline">BORDERLINE</string>
+    <string name="oxygen_sat">OXYGEN SAT.</string>
+    <string name="ai_confidence">AI CONFIDENCE</string>
+
+    <!-- Patient History -->
+    <string name="patient_file">PATIENT FILE</string>
+    <string name="years_old">years old</string>
+    <string name="type_2_diabetes">Type 2 Diabetes</string>
+    <string name="hypertension">Hypertension</string>
+    <string name="last_bp">LAST BP</string>
+    <string name="glucose">GLUCOSE</string>
+    <string name="risk_level">RISK LEVEL</string>
+    <string name="moderate">Moderate</string>
+    <string name="new_entry">New Entry</string>
+    <string name="clinical_timeline">Clinical Timeline</string>
+    <string name="emergency_stabilization">Emergency Stabilization</string>
+    <string name="routine_wellness_check">Routine Wellness Check</string>
+    <string name="initial_assessment">Initial Assessment</string>
+
+    <!-- Escalation & Referral -->
+    <string name="critical_care">CRITICAL CARE</string>
+    <string name="referral_escalation">Referral & Escalation</string>
+    <string name="senior_cardiologist">Senior Cardiologist</string>
+    <string name="available_now">AVAILABLE NOW</string>
+    <string name="km_away">KM AWAY</string>
+    <string name="call_doctor_vance">Call Doctor Vance</string>
+    <string name="escalation_notes">ESCALATION NOTES</string>
+    <string name="describe_worsening">Describe patient\'s worsening condition or specific concerns...</string>
+    <string name="mark_as_referred">Mark as referred</string>
+    <string name="will_alert_dispatch">This will alert the dispatch team and update patient status.</string>
+    <string name="confirm_referral">Confirm Referral</string>
+
+    <!-- Notifications -->
+    <string name="alerts">Alerts.</string>
+    <string name="prioritized_notifications">Prioritized clinical notifications and system updates for your current shift in the Northern Region.</string>
+    <string name="mark_all_as_read">MARK ALL AS READ</string>
+    <string name="high_risk_section">HIGH RISK</string>
+    <string name="abnormal_vitals">Abnormal Vitals</string>
+    <string name="spo2_dropped">SPO2 dropped to 88% at 08:15. Immediate follow-up...</string>
+    <string name="view_patient_file">VIEW PATIENT FILE</string>
+    <string name="missed_dosage">Missed Dosage</string>
+    <string name="scheduled_antibiotic">Scheduled antibiotic (IV) not recorded for 08:00 AM...</string>
+    <string name="log_medication">LOG MEDICATION</string>
+    <string name="follow_up_reminders">FOLLOW-UP REMINDERS</string>
+    <string name="post_op_review">POST-OP REVIEW</string>
+    <string name="schedule_wound_dressing">Schedule wound dressing check for the 48-hour post-op window.</string>
+    <string name="schedule_now">SCHEDULE NOW</string>
+    <string name="lab_results">LAB RESULTS</string>
+    <string name="blood_panel_results">Blood panel results available for review. Glucose levels require attention.</string>
+    <string name="review_report">REVIEW REPORT</string>
+    <string name="system_updates">SYSTEM UPDATES</string>
+    <string name="database_sync_successful">Database Sync Successful</string>
+    <string name="all_local_records">ALL LOCAL RECORDS ARE NOW UP-TO-DATE WITH HQ</string>
+    <string name="protocol_update">Protocol Update: v2.4.1</string>
+    <string name="revised_guidelines">REVISED GUIDELINES FOR HYPERTENSION MANAGEMENT</string>
+
+    <!-- Settings -->
+    <string name="community_health_lead">Community Health Lead</string>
+    <string name="zone">Zone</string>
+    <string name="app_preferences">APP PREFERENCES</string>
+    <string name="step_by_step_audio">Step-by-step audio assistance</string>
+    <string name="sync_patient_data">Sync patient data automatically</string>
+    <string name="app_language">App Language</string>
+    <string name="currently_active">Currently active</string>
+    <string name="support_center">SUPPORT CENTER</string>
+    <string name="need_clinical_support">Need Clinical Support?</string>
+    <string name="connect_directly">Connect directly with our 24/7 medical assistant team for emergency field guidance.</string>
+    <string name="call_help_support">Call Help & Support</string>
+    <string name="logout_from_medilift">Logout from MediLift</string>
+    <string name="version">VERSION 2.4.1 (STABLE)</string>
+
+    <!-- Sync & Offline State -->
+    <string name="records_saved_locally">14 Records Saved Locally</string>
+    <string name="waiting_stable_connection">Waiting for a stable connection. Current status: Weak Signal in the valley sector.</string>
+    <string name="retry_sync">Retry Sync</string>
+    <string name="network_diagnostics">NETWORK DIAGNOSTICS</string>
+    <string name="unstable_connection">Unstable Connection Detected</string>
+    <string name="system_holding_entries">The system is automatically holding your latest entries to prevent data corruption. Records will upload once signal strength exceeds 40%.</string>
+    <string name="signal_strength">SIGNAL STRENGTH</string>
+    <string name="pending_upload_size">PENDING UPLOAD SIZE</string>
+    <string name="pending_synchronizations">Pending Synchronizations</string>
+    <string name="last_check">LAST CHECK</string>
+    <string name="mins_ago">MINS AGO</string>
+    <string name="patient_intake">Patient Intake</string>
+    <string name="vitals_recorded_time">Vitals recorded at 08:45 AM</string>
+    <string name="emergency_triage">Emergency Triage</string>
+    <string name="dosage_update">Dosage Update</string>
+    <string name="insulin_admin">Insulin Admin</string>
+    <string name="ward">Ward</string>
+    <string name="batch_id">Batch ID</string>
+    <string name="pending">Pending</string>
+    <string name="synced">Synced</string>
+    <string name="lab_results_hematology">Lab Results: Hematology</string>
+    <string name="standard_screening">Standard Screening</string>
+    <string name="completed_yesterday">Completed yesterday</string>
+
+    <!-- Common -->
+    <string name="home">HOME</string>
+    <string name="patients">PATIENTS</string>
+    <string name="alerts_nav">ALERTS</string>
+    <string name="settings_nav">SETTINGS</string>
+    <string name="pending">Pending</string>
+    <string name="synced">Synced</string>
+
+    <!-- Old strings kept for backward compatibility -->
+    <string name="pending_sync_value">Pending sync: --</string>
+    <string name="pending_sync">Pending local records</string>
+    <string name="pending_sync_unknown">Pending local records: unavailable</string>
+    <string name="recommendation_24h">Recommendation: Refer to doctor within 24 hours</string>
+    <string name="call_doctor">Call Doctor</string>
+    <string name="escalation_notes_hint">Describe patient condition and escalation notes</string>
+    <string name="view_patient_file">View Patient File</string>
+    <string name="voice_guidance">Voice Guidance</string>
+    <string name="auto_sync">Auto-Sync</string>
+    <string name="logout">Logout</string>
+    <string name="beneficiary_id_dash">Beneficiary ID: -</string>
+    <string name="status_ready">Ready</string>
+
+    <string name="login_page_title">Login and Registration</string>
+    <string name="asha_email">ASHA email</string>
+    <string name="password">Password</string>
+    <string name="register_asha">Register ASHA</string>
+    <string name="login">Login</string>
+
+    <string name="beneficiary_page_title">Create Beneficiary</string>
+    <string name="beneficiary_name">Beneficiary name</string>
+    <string name="village">Village</string>
+    <string name="create_beneficiary">Create Beneficiary</string>
+
+    <string name="visit_page_title">Record Visit (Offline)</string>
+    <string name="beneficiary_id">Beneficiary ID</string>
+    <string name="visit_type">Visit type (home/clinic)</string>
+    <string name="systolic_bp">Systolic BP</string>
+    <string name="hemoglobin">Hemoglobin</string>
+    <string name="save_visit_offline">Save Visit Offline</string>
+
+    <string name="language_english">English</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="language_tamil">Tamil</string>
+    <string name="language_telugu">Telugu</string>
+    <string name="language_odia">Odia</string>
+    <string name="language_bengali">Bengali</string>
+
+    <string name="toast_enter_email_password">Enter email and password</string>
+    <string name="toast_logged_in">Logged in</string>
+    <string name="toast_login_failed">Login failed</string>
+    <string name="toast_registered">Registration complete</string>
+    <string name="toast_register_failed">Registration failed or already exists</string>
+    <string name="toast_enter_name">Enter beneficiary name</string>
+    <string name="toast_beneficiary_created">Beneficiary created</string>
+    <string name="toast_beneficiary_failed">Create beneficiary failed</string>
+    <string name="toast_enter_beneficiary_id">Enter beneficiary ID</string>
+    <string name="toast_enter_observation">Enter at least one observation</string>
+    <string name="toast_visit_saved">Visit saved offline</string>
+    <string name="toast_visit_failed">Save visit failed</string>
+    <string name="toast_sync_done">Sync complete</string>
+    <string name="toast_sync_failed">Sync failed</string>
+
+    <string name="status_login_success">Login success</string>
+    <string name="status_login_failed">Login failed</string>
+    <string name="status_registered">Registered ASHA</string>
+    <string name="status_registration_note">Registration note</string>
+    <string name="status_beneficiary_created">Beneficiary created</string>
+    <string name="status_beneficiary_failed">Beneficiary create failed</string>
+    <string name="status_visit_saved">Offline visit saved</string>
+    <string name="status_visit_failed">Save visit failed</string>
+    <string name="status_sync_complete">Sync complete. Synced count</string>
+    <string name="status_sync_failed">Sync failed</string>
+
+    <!-- Additional strings for new layouts -->
+    <string name="english">English</string>
+    <string name="language">Language</string>
+    <string name="enable_voice_prompts">Enable voice prompts for guidance</string>
+    <string name="offline_mode">Offline Mode</string>
+    <string name="enable_offline_access">Enable offline access to patient records</string>
+    <string name="critical_alerts">Critical Alerts</string>
+    <string name="high_priority_notifications">High priority notifications only</string>
+    <string name="routine_reminders">Routine Reminders</string>
+    <string name="follow_up_reminders_desc">Follow-up reminders and routine tasks</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="view_privacy_terms">View privacy and data protection terms</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="view_terms">View terms and conditions</string>
+    <string name="app_version">App Version</string>
+    <string name="sync_on_wifi">Sync data automatically over WiFi</string>
+    <string name="connected_to_server">Connected to Server</string>
+    <string name="all_data_synced">All data synced and up-to-date</string>
+    <string name="storage_used">Storage Used</string>
+    <string name="patient_records">Patient Records</string>
+    <string name="media_files">Media Files</string>
+    <string name="sync_now">SYNC NOW</string>
+    <string name="sync_successful">Sync Successful</string>
+    <string name="synced_over_wifi">Synced over WiFi connection</string>
+    <string name="synced_over_mobile">Synced over mobile data</string>
+    <string name="offline_mode_enabled">Offline Mode Enabled</string>
+    <string name="continue_without_connection">Continue working without internet connection</string>
+    <string name="offline_features">• View patient records • Record vitals • Save observations • Sync when connected</string>
+    <string name="clear_offline_data">Clear Offline Data</string>
+</resources>

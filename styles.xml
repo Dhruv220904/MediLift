@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button Styles -->
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/spacing_md</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingHorizontal">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingVertical">@dimen/button_padding_vertical</item>
+        <item name="backgroundTint">@color/primary_blue</item>
+        <item name="cornerRadius">@dimen/corner_radius_full</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/spacing_md</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingHorizontal">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingVertical">@dimen/button_padding_vertical</item>
+        <item name="backgroundTint">@color/success_green</item>
+        <item name="cornerRadius">@dimen/corner_radius_full</item>
+    </style>
+
+    <style name="AlertButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/spacing_md</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingHorizontal">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingVertical">@dimen/button_padding_vertical</item>
+        <item name="backgroundTint">@color/alert_red</item>
+        <item name="cornerRadius">@dimen/corner_radius_full</item>
+    </style>
+
+    <!-- Text Input Styles -->
+    <style name="InputField" parent="Widget.MaterialComponents.TextInputEditText">
+        <item name="android:layout_height">@dimen/input_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/spacing_md</item>
+        <item name="android:padding">@dimen/input_padding</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:backgroundTint">@color/background_light</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="HeadingLarge">
+        <item name="android:textSize">@dimen/text_large_heading</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="HeadingMedium">
+        <item name="android:textSize">@dimen/text_xxl</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="HeadingSmall">
+        <item name="android:textSize">@dimen/text_xl</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="SecondaryText">
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="LabelText">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_blue</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="CardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_md</item>
+        <item name="cardBackgroundColor">@color/background_white</item>
+        <item name="cardCornerRadius">@dimen/corner_radius_lg</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+
+    <!-- Alert Card Styles -->
+    <style name="AlertCardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_md</item>
+        <item name="cardBackgroundColor">@color/alert_red_light</item>
+        <item name="cardCornerRadius">@dimen/corner_radius_lg</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+</resources>
