@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">प्रोजेक्ट आशा मोबाइल</string>
+    <string name="language_label">भाषा चुनें</string>
+    <string name="open_login_page">लॉगिन पेज खोलें</string>
+    <string name="open_beneficiary_page">लाभार्थी पेज खोलें</string>
+    <string name="open_visit_page">विज़िट पेज खोलें</string>
+    <string name="sync_pending_visits">लंबित विज़िट सिंक करें</string>
+    <string name="status_ready">तैयार</string>
+    <string name="login_page_title">लॉगिन और पंजीकरण</string>
+    <string name="register_asha">आशा पंजीकरण</string>
+    <string name="beneficiary_page_title">लाभार्थी बनाएं</string>
+    <string name="visit_page_title">विज़िट दर्ज करें (ऑफ़लाइन)</string>
+    <string name="save_visit_offline">विज़िट ऑफ़लाइन सेव करें</string>
+    <string name="language_english">अंग्रेज़ी</string>
+    <string name="language_hindi">हिंदी</string>
+    <string name="language_tamil">तमिल</string>
+    <string name="language_telugu">तेलुगु</string>
+    <string name="language_odia">ओड़िया</string>
+    <string name="language_bengali">बंगाली</string>
+</resources>

@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">প্রজেক্ট আশা মোবাইল</string>
+    <string name="language_label">ভাষা নির্বাচন করুন</string>
+    <string name="open_login_page">লগইন পেজ খুলুন</string>
+    <string name="open_beneficiary_page">উপভোক্তা পেজ খুলুন</string>
+    <string name="open_visit_page">ভিজিট পেজ খুলুন</string>
+    <string name="sync_pending_visits">অপেক্ষমান ভিজিট সিঙ্ক করুন</string>
+    <string name="sync_offline_state">সিঙ্ক ও অফলাইন অবস্থা</string>
+    <string name="ai_risk_result">AI ঝুঁকি ফলাফল</string>
+    <string name="escalation_referral">এস্কেলেশন ও রেফারাল</string>
+    <string name="notifications">নোটিফিকেশন</string>
+    <string name="patient_history">রোগীর ইতিহাস</string>
+    <string name="settings">সেটিংস</string>
+    <string name="morning_shift">সকালের শিফট ড্যাশবোর্ড</string>
+    <string name="visits_today_value">আজ 08টি ভিজিট</string>
+    <string name="pending_sync_value">অপেক্ষমান সিঙ্ক: --</string>
+    <string name="high_risk_summary">3 জন রোগী উচ্চ-ঝুঁকিপূর্ণ অবস্থায়। দ্রুত পুনর্মূল্যায়ন প্রয়োজন।</string>
+    <string name="add_new_patient">নতুন রোগী যোগ করুন</string>
+    <string name="start_visit">ভিজিট শুরু করুন</string>
+    <string name="pending_sync">লোকাল অপেক্ষমান রেকর্ড</string>
+    <string name="pending_sync_unknown">লোকাল অপেক্ষমান রেকর্ড: অনুপলব্ধ</string>
+    <string name="recommendation_24h">পরামর্শ: 24 ঘণ্টার মধ্যে ডাক্তারকে দেখান</string>
+    <string name="escalate_case">কেস এস্কেলেট করুন</string>
+    <string name="call_doctor">ডাক্তারকে কল করুন</string>
+    <string name="escalation_notes_hint">রোগীর অবস্থা ও এস্কেলেশন নোট লিখুন</string>
+    <string name="confirm_referral">রেফারাল নিশ্চিত করুন</string>
+    <string name="view_patient_file">রোগীর ফাইল দেখুন</string>
+    <string name="log_medication">ওষুধের লগ করুন</string>
+    <string name="retry_sync">আবার সিঙ্ক করুন</string>
+    <string name="voice_guidance">ভয়েস গাইডেন্স</string>
+    <string name="auto_sync">অটো-সিঙ্ক</string>
+    <string name="call_help_support">সহায়তা নম্বরে কল করুন</string>
+    <string name="logout">লগআউট</string>
+    <string name="beneficiary_id_dash">উপভোক্তা ID: -</string>
+    <string name="status_ready">প্রস্তুত</string>
+
+    <string name="login_page_title">লগইন এবং নিবন্ধন</string>
+    <string name="asha_email">ASHA ইমেল</string>
+    <string name="password">পাসওয়ার্ড</string>
+    <string name="register_asha">ASHA নিবন্ধন</string>
+    <string name="login">লগইন</string>
+
+    <string name="beneficiary_page_title">উপভোক্তা তৈরি করুন</string>
+    <string name="beneficiary_name">উপভোক্তার নাম</string>
+    <string name="village">গ্রাম</string>
+    <string name="create_beneficiary">উপভোক্তা তৈরি করুন</string>
+
+    <string name="visit_page_title">ভিজিট রেকর্ড করুন (অফলাইন)</string>
+    <string name="beneficiary_id">উপভোক্তা ID</string>
+    <string name="visit_type">ভিজিট ধরন (বাড়ি/ক্লিনিক)</string>
+    <string name="systolic_bp">সিস্টোলিক BP</string>
+    <string name="hemoglobin">হিমোগ্লোবিন</string>
+    <string name="save_visit_offline">ভিজিট অফলাইনে সংরক্ষণ করুন</string>
+
+    <string name="language_english">ইংরেজি</string>
+    <string name="language_hindi">হিন্দি</string>
+    <string name="language_tamil">তামিল</string>
+    <string name="language_telugu">তেলুগু</string>
+    <string name="language_odia">ওড়িয়া</string>
+    <string name="language_bengali">বাংলা</string>
+
+    <string name="toast_enter_email_password">ইমেল ও পাসওয়ার্ড দিন</string>
+    <string name="toast_logged_in">লগইন সফল</string>
+    <string name="toast_login_failed">লগইন ব্যর্থ</string>
+    <string name="toast_registered">নিবন্ধন সম্পন্ন</string>
+    <string name="toast_register_failed">নিবন্ধন ব্যর্থ বা আগে থেকেই আছে</string>
+    <string name="toast_enter_name">নাম লিখুন</string>
+    <string name="toast_beneficiary_created">উপভোক্তা তৈরি হয়েছে</string>
+    <string name="toast_beneficiary_failed">উপভোক্তা তৈরি ব্যর্থ</string>
+    <string name="toast_enter_beneficiary_id">উপভোক্তা ID দিন</string>
+    <string name="toast_enter_observation">কমপক্ষে একটি পর্যবেক্ষণ দিন</string>
+    <string name="toast_visit_saved">ভিজিট অফলাইনে সংরক্ষিত</string>
+    <string name="toast_visit_failed">ভিজিট সংরক্ষণ ব্যর্থ</string>
+    <string name="toast_sync_done">সিঙ্ক সম্পন্ন</string>
+    <string name="toast_sync_failed">সিঙ্ক ব্যর্থ</string>
+
+    <string name="status_login_success">লগইন সফল</string>
+    <string name="status_login_failed">লগইন ব্যর্থ</string>
+    <string name="status_registered">ASHA নিবন্ধিত</string>
+    <string name="status_registration_note">নিবন্ধন নোট</string>
+    <string name="status_beneficiary_created">উপভোক্তা তৈরি হয়েছে</string>
+    <string name="status_beneficiary_failed">উপভোক্তা তৈরি ব্যর্থ</string>
+    <string name="status_visit_saved">অফলাইন ভিজিট সংরক্ষিত</string>
+    <string name="status_visit_failed">ভিজিট সংরক্ষণ ব্যর্থ</string>
+    <string name="status_sync_complete">সিঙ্ক সম্পন্ন। সিঙ্ক সংখ্যা</string>
+    <string name="status_sync_failed">সিঙ্ক ব্যর্থ</string>
+</resources>
